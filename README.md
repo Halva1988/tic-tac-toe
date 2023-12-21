@@ -15,6 +15,41 @@
 #### app.js
 > The JavaScript file contains the core logic of the Tic-Tac-Toe game. It manages the game state, handles player moves, checks for a winner or a draw, updates the scores, and controls the display of the modal. Additionally, it enables interaction between the game board and the user.
 
+>Below are the key functions defined in app.js:
+
+**checkWinner()**
+>This function checks the current state of the game board against predefined win patterns. It returns the winner ('X' or 'O') if there is one, or null if there is no winner yet.
+
+**showWinnerModal(winner)**
+>Displays a modal announcing the winner. The background image of the modal changes based on whether 'X' or 'O' wins. Updates the scores and sets the game state to inactive.
+
+**showDrawModal()**
+>Displays a modal announcing a draw. Updates the scores and sets the game state to inactive.
+
+**closeModal()**
+>Closes the modal, making it hidden from view.
+
+**handleClick(index)**
+>Handles the logic when a player clicks on a cell. Updates the game board, checks for a winner or draw, and switches the current player. Invokes modal display functions when the game ends.
+
+**renderBoard()**
+>Renders the current state of the game board on the HTML page.
+
+**updateScore(winner)**
+>Updates the scores based on the winner ('X' or 'O').
+
+**showNewGameButton()**
+>Displays the "New Game" button.
+
+**hideNewGameButton()**
+>Hides the "New Game" button.
+
+**newGame()**
+>Resets the game state, hides the modal, and renders a new game board.
+
+**Event Listeners**
+>The script includes event listeners to handle clicks on the game board cells and the "New Game" button.
+
 #### Game Logic
 > The game follows standard Tic-Tac-Toe rules, where players take turns placing their symbols ('X' or 'O') on an empty cell. The game checks for a winning pattern after each move and displays a modal announcing the winner or a draw. Players can start a new game by clicking the "New Game" button.
 
