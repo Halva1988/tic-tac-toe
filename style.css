@@ -15,15 +15,21 @@ body {
 #score {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+	width: 60%;
 	padding: 10px;
-	box-sizing: border-box;
 }
 
 #board {
 	display: grid;
 	grid-template-columns: repeat(3, 100px);
 	grid-gap: 5px;
+}
+
+.cell,
+.cell-X,
+.cell-O {
+	background-position: center center;
+	background-size: contain;
 }
 
 .cell {
@@ -35,20 +41,14 @@ body {
 	justify-content: center;
 	cursor: pointer;
 	background-image: url(./assets/bgNull.png);
-	background-position: center center;
-	background-size: contain;
 }
 
 .cell-X {
 	background-image: url(./assets/bgStar.png);
-	background-position: center center;
-	background-size: contain;
 }
 
 .cell-O {
 	background-image: url(./assets/bgPlanet.png);
-	background-position: center center;
-	background-size: contain;
 }
 
 #new-game {
